@@ -2,7 +2,7 @@ class ThumbnailsController < ApplicationController
   # GET /thumbnails
   # GET /thumbnails.json
   def index
-    @thumbnails = Thumbnail.all
+    @thumbnails = Thumbnail.order("order_by ASC")
 
     respond_to do |format|
       format.html # index.html.erb

@@ -6,6 +6,7 @@
     <th>Image</th>
     <th>Title</th>
     <th>Description</th>
+    <th>Order</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= thumbnail.image %></td>
     <td><%= thumbnail.title %></td>
     <td><%= thumbnail.description %></td>
+    <td><%= thumbnail.order_by %></td>
     <td><%= link_to 'Show', thumbnail %></td>
     <td><%= link_to 'Edit', edit_thumbnail_path(thumbnail) %></td>
     <td><%= link_to 'Destroy', thumbnail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
